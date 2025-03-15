@@ -219,6 +219,20 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
+
+```javascript
+function somaArray(numeros) {
+
+    let soma = 0 // declarando a variável soma 
+
+    //declarando o i
+    for (let i = 0; i < numeros.length; i++) { // para funções com arrays utilizamos .length para a checagem de tamanho da variável e não .size
+        soma += 2*numeros[i]; // assim os números poderão ser "acumulados" no i e por fim somados e não sobrescritomos como estava ocorrendo anteriormente
+    }
+    return soma;
+}
+console.log(somaArray([1, 2, 3, 4]));
+```
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
 
@@ -226,3 +240,40 @@ ______
 - Uma classe `Livro` que herda de `Produto` e modifica o método `calcularDesconto()`, aplicando um desconto de 20% no preço dos livros.
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
+
+```javascript
+// Criação da classe mãe chamada Produto
+class Produto {
+    constructor(nome, preco) {
+      this.nome = nome;
+      this.preco = preco;
+    }
+  
+    // Função para implementação do método para calcular um desconto de 10%
+    calcularDesconto() {
+      return this.preco * 0.9; // retorna os 10% de desconto
+    }
+  }
+  
+  // Criação da classe filha "Classe Livro" herdando de Produto por meio do extends "nome-da-classe-mãe"
+  class Livro extends Produto {
+    constructor(nome, preco, autor) {
+      super(nome, preco); // Chama o construtor da classe mãe
+      this.autorLivro = autor;
+    }
+  
+    // Aqui o método da classe mãe é sobrescrevido
+    calcularDesconto() {
+      return this.preco * 0.8; // retorna os 20% de desconto apenas para livros
+    }
+  }
+  
+  // Criação das constantes a serem utilizadas
+  const produto = new Produto("Diário", 15);
+  const livro = new Livro("O Mundo de Sofia", 100, "Jostein Gaarder");
+  
+  // Testando os métodos implementados 
+  console.log(`${produto.nome} com o desconto: R$ ${produto.calcularDesconto()}`); // adiciona os 10% de desconto
+  console.log(`${livro.nome} com o desconto: R$ ${livro.calcularDesconto()}`); // adiciona os 20% de desconto
+  
+```
