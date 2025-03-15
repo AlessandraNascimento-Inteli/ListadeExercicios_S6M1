@@ -30,9 +30,8 @@ c) A saída será undefined seguido de undefined
 
 d) A saída será erro em ambas as linhas que utilizam console.log
 
-```
 Resposta: a), porque apesar da primeira variável ser global, ela não foi declarada antes do console.log (logo, ela não será chamada) e a segunda variável não foi chamada também por conta da declaração tardia, porém o erro é dado por conta do tipo de inicialização "let" que é utilizada apenas em declarações locais. 
-```
+
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
 
@@ -54,9 +53,8 @@ c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
 
-```
 Resposta: d), porque como não foram atribuidos valores a "a" e "b" ainda, a verificação sempre iria informar a mensagem de erro por conta da não atribuição.   
-```
+
 ______
 **3) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
@@ -90,9 +88,8 @@ c) O código imprime 50.
 
 d) O código gera um erro.
 
-```
 Resposta: b), porque não há "break" para parar a verificação e exibir o preço do eletrônico que está na primeira linha do switch case, logo, o código só para de ser lido depois de executar o preço do próximo tipo: vestuário. 
-```
+
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
@@ -110,9 +107,7 @@ c) 18
 
 d) 24
 
-```
 Resposta: d)24, porque no map os números estão sendo multiplicados por 2, no filter o x fica preenchido apenas com números maiores que 5 e por fim no reduce os números que passaram pelo filtro são somados. 
-```
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
@@ -130,9 +125,7 @@ c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
 
-```
 Resposta: c), porque o "splice" adiciona o primeiro item do array lista, em seguida deleta os dois seguintes itens e os substitui pelos declarados no "lista.splice" e como o último item da lista original não foi alterado, ele será mostrado no console.log.
-```
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
@@ -148,9 +141,7 @@ c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
 
-```
 Resposta: a), porque para utilizar o método da herança em Javascript basta declarar de qual classe já existente a classe que está sendo criada está herdando os atributos.  
-```
 ______
 **7) Dado o seguinte código. Indique a alternativa correta e justifique sua resposta.**
 
@@ -194,9 +185,8 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
-```
 Resposta: a), porque ao herdar os atributos da classe mãe, a classe funcionário tem acesso aos atributos declarados no construtor e apesar a função apresentar presente na classe funcionário sobrepor a função na classe mãe, o "super" chama as informações declaradas na funções. 
-```
+
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
@@ -212,9 +202,8 @@ c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explic
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
 
-```
 Resposta: b), a primeira afirmação realmente está correta, porém a segunda afirmação é falsa. O que acontece em Javascript é que ao implementar o polimorfismo no código, acontece uma sobreposição de métodos e não uma sobrecarga, desta forma a classe filha irá redefinir os métodos da classe pai. 
-```
+
 ______
 
 # Questões dissertativas
