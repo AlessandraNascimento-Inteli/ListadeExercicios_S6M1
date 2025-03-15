@@ -125,7 +125,7 @@ c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
 
-Resposta: c)
+Resposta: c), porque o "splice" adiciona o primeiro item do array lista, em seguida deleta os dois seguintes itens e os substitui pelos declarados no "lista.splice" e como o último item da lista original não foi alterado, ele será mostrado no console.log.
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
@@ -140,6 +140,8 @@ b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeir
 c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
+
+Resposta: a), porque para utilizar o método da herança em Javascript basta declarar de qual classe já existente a classe que está sendo criada está herdando os atributos.  
 ______
 **7) Dado o seguinte código. Indique a alternativa correta e justifique sua resposta.**
 
@@ -183,6 +185,8 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
+Resposta: a), porque ao herdar os atributos da classe mãe, a classe funcionário tem acesso aos atributos declarados no construtor e apesar a função apresentar presente na classe funcionário sobrepor a função na classe mãe, o "super" chama as informações declaradas na funções. 
+
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
@@ -197,6 +201,8 @@ b) A asserção é verdadeira e a razão é falsa.
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
+
+Resposta: b), a primeira afirmação realmente está correta, porém a segunda afirmação é falsa. O que acontece em Javascript é que ao implementar o polimorfismo no código, acontece uma sobreposição de métodos e não uma sobrecarga, desta forma a classe filha irá redefinir os métodos da classe pai. 
 
 ______
 
